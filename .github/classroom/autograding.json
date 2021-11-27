@@ -23,7 +23,7 @@
     {
       "name": "Check status",
       "setup": "",
-      "run": "URL=$(git remote get-url origin); curl -vv $URL/actions/actions/workflows/build-workflow.yml/badge.svg | grep passing",
+      "run": "URL=$(git remote get-url origin); curl -vv $URL/actions/workflows/build-workflow.yml/badge.svg | grep passing",
       "input": "",
       "output": "",
       "comparison": "included",

@@ -22,8 +22,8 @@
     },
     {
       "name": "Check status",
-      "setup": "export URL=$(git remote get-url origin); echo $URL",
-      "run": "curl $URL/actions/actions/workflows/build-workflow.yml/badge.svg | grep passing",
+      "setup": "",
+      "run": "export URL=$(git remote get-url origin); curl $URL/actions/actions/workflows/build-workflow.yml/badge.svg | grep passing",
       "input": "",
       "output": "",
       "comparison": "included",

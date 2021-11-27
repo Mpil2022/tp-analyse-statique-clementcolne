@@ -21,6 +21,16 @@
       "points": 4
     },
     {
+      "name": "Check remote",
+      "setup": "",
+      "run": "git remote -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    }
+    {
       "name": "Check status",
       "setup": "echo \"Checking in ${{ github.server.url }}\"",
       "run": "curl -v ${{ github.server.url }}/${{ github.repository }}/actions/actions/workflows/build-workflow.yml/badge.svg | grep passing",

@@ -22,7 +22,7 @@
     },
     {
       "name": "Check status",
-      "setup": "export $URL=$(git remote get-url origin); echo $URL",
+      "setup": "export URL=$(git remote get-url origin); echo $URL",
       "run": "curl $URL/actions/actions/workflows/build-workflow.yml/badge.svg | grep passing",
       "input": "",
       "output": "",
